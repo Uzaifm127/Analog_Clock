@@ -18,7 +18,8 @@ body {
 }
 
 .clock {
-  background: url(/Img/clock.png) no-repeat;
+  /* background: url(/Img/clock.png) no-repeat; */
+  background: url(/Analog_Clock/Img/clock.png) no-repeat;
   position: relative;
   background-size: 85%;
   background-position: center center;
