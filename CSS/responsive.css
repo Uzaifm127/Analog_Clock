@@ -1,0 +1,67 @@
+@media (max-width: 1000px) {
+  .clock {
+    height: 400px;
+    width: 400px;
+    border: 20px solid #26272c;
+    border-radius: 20px;
+    box-shadow: 12.5px 12.5px 20px rgba(0, 0, 0, 0.5),
+      -12.5px -12.5px 20px rgba(255, 255, 255, 0.288),
+      inset 12.5px 12.5px 20px rgba(0, 0, 0, 0.5),
+      inset -12.5px -12.5px 20px rgba(255, 255, 255, 0.288);
+  }
+
+  .clock::before {
+    content: "";
+    height: 7.5px;
+    width: 7.5px;
+    box-shadow: 0 0 1px pink, 0 0 2.88px pink, 0 0 3px pink, 0 0 4px pink;
+  }
+
+  .hour,
+  .minute,
+  .second {
+    border-radius: 10px;
+  }
+
+  .hour {
+    box-shadow: 0 0 1px #fff, 0 0 2.88px #fff, 0 0 3px #fff, 0 0 4px #fff;
+  }
+  .minute {
+    box-shadow: 0 0 1px salmon, 0 0 2.88px salmon, 0 0 3px salmon,
+      0 0 4px salmon;
+  }
+  .second {
+    box-shadow: 0 0 1px #00ffc3, 0 0 2.88px #00ffc3, 0 0 3px #00ffc3,
+      0 0 4px #00ffc3, 0 0 5px #00ffc3;
+  }
+}
+
+@media (max-width: 550px) {
+  .clock {
+    height: 300px;
+    width: 300px;
+    border: 10px solid #26272c;
+    border-radius: 15px;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5),
+      -7px -7px 10px rgba(255, 255, 255, 0.288),
+      inset 7px 7px 10px rgba(0, 0, 0, 0.5),
+      inset -7px -7px 10px rgba(255, 255, 255, 0.288);
+  }
+}
+
+@media (max-width: 380px) {
+  .clock {
+    height: 81.745vmin;
+    width: 81.745vmin;
+    border: 2.7vmin solid #26272c;
+    border-radius: 2.63853vmin;
+    box-shadow: 2vmin 2vmin 2vmin rgba(0, 0, 0, 0.5), -2vmin -2vmin 2vmin rgba(255, 255, 255, 0.288), inset 2vmin 2vmin 2vmin rgba(0, 0, 0, 0.5), inset -2vmin -2vmin 2vmin rgba(255, 255, 255, 0.288);
+  }
+
+  .clock::before {
+    content: "";
+    height: 1.63vmin;
+    width: 1.63vmin;
+    box-shadow: 0 0 1px pink, 0 0 2.88px pink, 0 0 3px pink, 0 0 4px pink;
+  }
+}

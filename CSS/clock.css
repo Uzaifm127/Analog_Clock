@@ -1,0 +1,84 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  background: #26272c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock {
+  background: url(/Img/clock.png) no-repeat;
+  position: relative;
+  background-size: 85%;
+  background-position: center center;
+  height: 40vmax;
+  width: 40vmax;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2vmax solid #26272c;
+  box-shadow: 1.25vmax 1.25vmax 2vmax rgba(0, 0, 0, 0.5),
+    -1.25vmax -1.25vmax 2vmax rgba(255, 255, 255, 0.288),
+    inset 1.25vmax 1.25vmax 2vmax rgba(0, 0, 0, 0.5),
+    inset -1.25vmax -1.25vmax 2vmax rgba(255, 255, 255, 0.288);
+  border-radius: 2vmax;
+}
+
+.clock::before {
+  content: "";
+  position: absolute;
+  height: 0.75vmax;
+  width: 0.75vmax;
+  z-index: 1;
+  background-color: pink;
+  box-shadow: 0 0 0.1vmax pink, 0 0 0.288vmax pink, 0 0 0.3vmax pink,
+    0 0 0.4vmax pink;
+  border-radius: 50%;
+}
+
+.hour,
+.minute,
+.second {
+  position: absolute;
+  height: 22%;
+  width: 0.5%;
+  top: 32%;
+  border-radius: 1vmax;
+  transition: all 0.5s ease;
+}
+.hour {
+  width: 0.7%;
+  background: #fff;
+  box-shadow: 0 0 0.1vmax #fff, 0 0 0.288vmax #fff, 0 0 0.3vmax #fff,
+    0 0 0.4vmax #fff;
+  transform-origin: 50% 82%;
+}
+
+.minute {
+  background-color: salmon;
+  top: 27%;
+  height: 27%;
+  box-shadow: 0 0 0.1em salmon, 0 0 0.288em salmon, 0 0 0.3em salmon,
+    0 0 0.4em salmon;
+  transform-origin: 50% 84.9%;
+}
+
+.second {
+  background: #00ffc3;
+  top: 24%;
+  height: 30%;
+  box-shadow: 0 0 0.1vmax #00ffc3, 0 0 0.288vmax #00ffc3, 0 0 0.3vmax #00ffc3,
+    0 0 0.4vmax #00ffc3, 0 0 0.5vmax #00ffc3;
+  transform-origin: 50% 86.8%;
+}
